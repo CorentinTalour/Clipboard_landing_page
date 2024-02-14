@@ -1,6 +1,10 @@
-@mixin mobile {
+@mixin mobileAndTablet {
   @media (max-width: 480px) {
     @content;
+  }
+
+  @media (max-width: 767px) {
+    @content
   }
 }
 
